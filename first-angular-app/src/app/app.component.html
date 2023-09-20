@@ -1,0 +1,21 @@
+<button class="btn btn-primary" [disabled]="!_allowNewServer" (click)="createNewServer()">Add server</button>
+<p>{{ _serverCreationStatus }}</p>
+
+<label>Server name:</label>
+<input type="text" class="form-control" (input)="onServerUpdated($event)" />
+
+<!-- two-way binding -->
+<input class="form-control" type="text" [(ngModel)]="_serverCreationStatus" />
+
+<label>Username</label>
+<input type="text" class="form-control" [(ngModel)]="_username" />
+<p>{{ _username }}</p>
+<button class="btn btn-warning" [disabled]="!isButtonDisabled()" (click)="resetUsername()">Reset</button>
+
+<p *ngIf="_isDisplayed else noUsername">{{ _username }}</p>
+
+<ng-template #noUsername>
+    <p>No username</p>
+</ng-template>
+
+<app-server></app-server>

@@ -1,0 +1,27 @@
+	STARTING 
+
+- Using CLI to create new project
+- Introduction to how Angular app starts and works
+- Angular syntax creating components
+- Creating components with CLI and manualy
+- Databinding (one-way, two-way)
+- Property binding
+- Event binding
+- Passing and using data with Event binding
+- Built in directives
+- Structural and attribute
+
+- App design
+- Stucturing app
+- creating models
+
+- Components and databinding
+- Property and event binding
+- Input and output binding
+- Lifecycle hooks
+- Using ng-content
+- ViewChild
+
+- Directives
+
+- Services and dependency injection
